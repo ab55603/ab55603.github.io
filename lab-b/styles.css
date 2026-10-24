@@ -9,7 +9,7 @@ body {
 
 #search-bar {
   width: 100%;
-  background: url("/assets/magnifying-glass.png");
+  background: url("assets/magnifying-glass.png");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: 0px center;
@@ -37,7 +37,7 @@ body {
 }
 
 .bin {
-  background: url("/assets/bin.png") center / 100% 100% no-repeat;
+  background: url("assets/bin.png") center / 100% 100% no-repeat;
   border: none;
   width: 50px;
   height: 50px;
