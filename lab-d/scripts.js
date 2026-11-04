@@ -1,6 +1,6 @@
 let key = "57b52bb94881cf58c820b702f2aa9fd6";
-let current = "http://api.openweathermap.org/data/2.5/weather";
-let forecast = "http://api.openweathermap.org/data/2.5/forecast";
+let current = "https://api.openweathermap.org/data/2.5/weather";
+let forecast = "https://api.openweathermap.org/data/2.5/forecast";
 let lat = 0;
 let lon = 0;
 
@@ -10,7 +10,7 @@ let button = document.getElementById('check');
 let place = document.getElementById('place');
 
 button.onclick = async () => {
-    let geo = `http://api.openweathermap.org/geo/1.0/direct?q=${place.value}&limit=1&appid=${key}`;
+    let geo = `https://api.openweathermap.org/geo/1.0/direct?q=${place.value}&limit=1&appid=${key}`;
     let response = await fetch(geo);
     let result = await response.json();
     lat = result[0].lat;
